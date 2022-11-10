@@ -43,7 +43,7 @@ Then we clone this repository and install the LaunchAgent
 7. `sudo mv disable-charging.sh /Library/LaunchAgents`
 8. `sudo mv com.disable-charging.plist /Library/LaunchAgents`
 
-Make changes to the script so you disable charging on the ports you want.
+Make changes to the script so you disable charging on the ports you want. Note that the script will be run with elevated privilges, so ensure the path to the `smc` binary is included in the `PATH` environment variable.
 
 9. `sudo nano /Library/LaunchAgents/disable-charging.sh`
 
